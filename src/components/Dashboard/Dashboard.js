@@ -32,4 +32,4 @@ class Dashboard extends  Component {
 	}
 }
 
-export default Dashboard;
+export default Dashboar d;
