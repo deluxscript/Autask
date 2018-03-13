@@ -1,0 +1,11 @@
+.dashboard {
+	height: 100vh;
+	padding-top: 100px;
+}
+
+.card:not(.card-plain):hover {
+	transform: none;
+}
+.card {
+	padding: 10px 20px 0 20px;
+}

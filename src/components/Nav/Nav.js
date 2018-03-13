@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
 	return (
@@ -11,7 +11,7 @@ const Nav = () => {
 		                <span className="navbar-toggler-bar"></span>
 		                <span className="navbar-toggler-bar"></span>
 		            </button>
-		            <a className="navbar-brand">Logo</a>
+		            <Link to="/" className="navbar-brand">Logo</Link>
 		        </div>
 		        <div className="collapse navbar-collapse" id="navbarToggler">
 		            <ul className="navbar-nav ml-auto">

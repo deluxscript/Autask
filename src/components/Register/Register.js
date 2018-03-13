@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Register.css';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 class Register extends Component {
 
@@ -12,6 +13,10 @@ class Register extends Component {
 			activeSxState: false,
 			inactiveDxState: false
 		};
+	}
+
+	componentDidMount() {
+		document.body.style.backgroundColor = "#494DA1";
 	}
 
 	onClickLogin = () => {
@@ -37,7 +42,7 @@ class Register extends Component {
 	render() {
 		return (
 			<div>
-				<div className="container">
+				<div className="regContainer">
 					<form className={classNames("signUp, card", {"inactive-dx":this.state.inactiveSxState}, {"active-sx":this.state.activeSxState})}>
 						<h4>Create Your Account</h4>
 						<input className="w100" type="email" placeholder="Email Address" autoComplete='off' />
@@ -53,7 +58,7 @@ class Register extends Component {
 						<input type="email" placeholder="Insert eMail" autoComplete='off' />
 						<input type="password" placeholder="Insert Password" />
 						<button className="form-btn sx back" type="button" onClick = {this.onClickBack}>Back</button>
-						<button className="form-btn dx" type="submit">Log In</button>
+						<button className="form-btn dx" type="submit"><Link to ="/Dashboard" className="form-btn dx" >Log In</Link></button>
 					</form>
 				</div>
 			</div>
