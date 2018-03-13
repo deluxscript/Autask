@@ -1,0 +1,14 @@
+button, p {
+	margin-top: 15px;
+}
+.btn, .btn:hover {
+	background-color: #fd79a8;
+	border: none;
+	font-size: 16px;
+}
+
+.Appheader {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	text-transform: capitalize;
+}
