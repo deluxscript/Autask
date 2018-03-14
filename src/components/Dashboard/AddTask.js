@@ -3,7 +3,11 @@ import './AddTask.css'
 
 class AddTask extends Component {
 
-	
+	createTask = () => {
+		const Task = {
+			
+		}
+	}
 
 	render() {
 		return (
