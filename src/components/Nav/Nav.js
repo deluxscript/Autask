@@ -12,7 +12,7 @@ const Nav = () => {
 		                <span className="navbar-toggler-bar"></span>
 		                <span className="navbar-toggler-bar"></span>
 		            </button>
-		            <Link to="/" className="navbar-brand"><img src="{{Logo}}" /></Link>
+		            <Link to="/" className="navbar-brand"><img src="{{Logo}} /></Link>
 		        </div>
 		        <div className="collapse navbar-collapse" id="navbarToggler">
 		            <ul className="navbar-nav ml-auto">
