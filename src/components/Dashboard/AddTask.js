@@ -5,8 +5,14 @@ class AddTask extends Component {
 
 	createTask = () => {
 		const Task = {
-			
+			projectName: this.name.value,
+			ProjectDesc: this.desc.value,
+			sDate: this.startDate.value,
+			eDate: this.endDate.value,
+			level: this.level.value,
 		}
+
+		console.log(Task);
 	}
 
 	render() {
