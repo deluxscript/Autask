@@ -10,6 +10,6 @@ body {
 	background: #494DA1;
 }
 
-a {
+a, a:hover {
 	color: inherit;
 }
