@@ -9,3 +9,7 @@ body {
 .default-bg {
 	background: #494DA1;
 }
+
+a {
+	color: inherit;
+}
