@@ -3,7 +3,7 @@ import './AddTask.css'
 
 class AddTask extends Component {
 
-	c
+	
 
 	render() {
 		return (
