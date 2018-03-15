@@ -12,10 +12,24 @@ class AddTask extends Component {
 		}
 	}
 
-	handleChange (event) {
+	handleChange (e) {
 		this.setState( 
-			[event.target.name]: event.target.value
+			[e.target.name]: e.target.value
 		)
+	}
+
+	onSubmit = (e) => {
+		e.preventDefault();
+		const form = {
+		name: this.state.name,
+		email: this.state.email
+		}
+		{/* -----------you would send data to API to get results, I used database for ease, this also clears the form on submit----------------*/}
+		database.push(form);
+		this.setState({
+		name: '',
+		email: ''
+		})
 	}
 
 	render() {
