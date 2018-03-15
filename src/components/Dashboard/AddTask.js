@@ -38,7 +38,7 @@ class AddTask extends Component {
 					<h4 className="header">Add your task details here</h4>
 					<form className="task-form">
 						<div className="form-group">
-						         <input type="text" name="projectName" className="form-control" placeholder="Project Name" value="" onChange={e=> this.handleChange(e)} />
+						         <input type="text" name="projectName" className="form-control" placeholder="Project Name" value={this.state.projectName} onChange={e=> this.handleChange(e)} />
 						</div>
 						<div className="form-group">
 							<textarea className="form-control border-input" name="ProjectDesc" placeholder="This is a textarea with border. Here can be your nice text" rows="3" onChange={e=> this.handleChange(e)} ></textarea>
