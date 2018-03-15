@@ -25,7 +25,6 @@ class AddTask extends Component {
 			projectDesc: this.state.projectDesc,
 			assignedDate: this.state.assignedDate,
 		}
-		this.taskform.reset();
 
 		console.log('PN', form.projectName);
 		console.log('PD', form.projectDesc);
@@ -37,7 +36,7 @@ class AddTask extends Component {
 			<div className="card default-bg AddTask">
 				<div className="card-body">
 					<h4 className="header">Add your task details here</h4>
-					<form className="task-form" ref={(input) => this.taskForm = input}>
+					<form className="task-form">
 						<div className="form-group">
 						         <input type="text" name="projectName" className="form-control" placeholder="Project Name" value={this.state.projectName} onChange={e=> this.handleChange(e)} />
 						</div>
