@@ -50,7 +50,7 @@ class AddTask extends Component {
 								</span>
 							</div>
 						</div>
-						<button type="button" className="btn btn-success btn-sm">Submit</button>
+						<input type="submit" className="btn btn-success btn-sm">Submit</button>
 					</form>
 				</div>
 			</div>
