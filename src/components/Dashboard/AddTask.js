@@ -44,12 +44,8 @@ class AddTask extends Component {
 							<textarea className="form-control border-input" name="ProjectDesc" placeholder="This is a textarea with border. Here can be your nice text" rows="3" onChange={e=> this.handleChange(e)} ></textarea>
 						</div>
 						<div className="form-group">
-							<div className='input-group date' id='datetimepicker'>
-								<input type='text' name="assignedDate" className="form-control datetimepicker" placeholder="Start Date" value={this.state.assignedDate} onChange={e => this.handleChange(e)} />
-								<span className="input-group-addon">
-								<span className="glyphicon glyphicon-calendar"><i className="fa fa-calendar" aria-hidden="true"></i></span>
-								</span>
-							</div>
+							<input type='text' name="assignedDate" className="form-control datetimepicker" placeholder="Start Date" value={this.state.assignedDate} onChange={e => this.handleChange(e)} />
+							
 						</div>
 						<button type="button" onClick={(e) => this.onSubmit(e)} className="btn btn-success btn-sm">Submit</button>
 					</form>
