@@ -13,9 +13,9 @@ class AddTask extends Component {
 	}
 
 	handleChange = (e) => {
-		this.setState( 
+		this.setState( {
 			projectName: e.target.value
-		)
+		})
 	}
 
 	onSubmit = (e) => {
