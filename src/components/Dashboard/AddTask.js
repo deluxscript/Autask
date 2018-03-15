@@ -21,8 +21,8 @@ class AddTask extends Component {
 	onSubmit = (e) => {
 		e.preventDefault();
 		const form = {
-			projectName: this.state.projectName,
-			ProjectDesc: this.state.ProjectDesc,
+			projectName: this.state.projectName
+			ProjectDesc: this.state.ProjectDesc
 			assignedDate: this.state.assignedDate
 		}
 
