@@ -26,7 +26,7 @@ class AddTask extends Component {
 			assignedDate: this.state.assignedDate,
 		}
 
-		console.log('PN', this.state.projectName);
+		console.log(this.state.projectName);
 		console.log('PD', form.ProjectDesc);
 		console.log('AD', form.assignedDate);
 	}
