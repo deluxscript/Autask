@@ -7,7 +7,7 @@ class AddTask extends Component {
 		super();
 		this.state = {
 			projectName: '',
-			ProjectDesc: ',',
+			projectDesc: ',',
 			assignedDate: ''
 		}
 	}
@@ -22,12 +22,12 @@ class AddTask extends Component {
 		e.preventDefault();
 		const form = {
 			projectName: this.state.projectName,
-			ProjectDesc: this.state.ProjectDesc,
+			projectDesc: this.state.projectDesc,
 			assignedDate: this.state.assignedDate,
 		}
 
 		console.log('PN', form.projectName);
-		console.log('PD', form.ProjectDesc);
+		console.log('PD', form.projectDesc);
 		console.log('AD', form.assignedDate);
 	}
 
