@@ -12,6 +12,12 @@ class AddTask extends Component {
 		}
 	}
 
+	handleChange (event) {
+		this.setState( 
+			[event.target.name]: event.target.value
+		)
+	}
+
 	createTask = () => {
 		const Task = {
 			projectName: this.name.value,
