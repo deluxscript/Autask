@@ -21,15 +21,14 @@ class AddTask extends Component {
 	onSubmit = (e) => {
 		e.preventDefault();
 		const form = {
-		name: this.state.name,
-		email: this.state.email
+			projectName: this.state.projectName,
+			ProjectDesc: this.state.ProjectDesc,
+			assignedDate: this.state.assignedDate
 		}
-		{/* -----------you would send data to API to get results, I used database for ease, this also clears the form on submit----------------*/}
-		database.push(form);
-		this.setState({
-		name: '',
-		email: ''
-		})
+
+		console.log('PN', form.projectName);
+		console.log('PD', form.ProjectDesc);
+		console.log('AD', form.assignedDate);
 	}
 
 	render() {
@@ -52,7 +51,7 @@ class AddTask extends Component {
 								</span>
 							</div>
 						</div>
-						<input type="submit" className="btn btn-success btn-sm">Submit</button>
+						<button type="button" className="btn btn-success btn-sm">Submit</button>
 					</form>
 				</div>
 			</div>
