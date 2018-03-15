@@ -12,7 +12,7 @@ class AddTask extends Component {
 		}
 	}
 
-	handleChange (e) {
+	handleChange = (e) => {
 		this.setState( 
 			[e.target.name]: e.target.value
 		)
