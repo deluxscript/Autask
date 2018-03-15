@@ -37,14 +37,14 @@ class AddTask extends Component {
 					<h4 className="header">Add your task details here</h4>
 					<form className="task-form">
 						<div className="form-group">
-						         <input type="text" name="projectName" className="form-control" placeholder="Project Name" />
+						         <input type="text" name="projectName" className="form-control" placeholder="Project Name" onChange={ event => this.handleChange} />
 						</div>
 						<div className="form-group">
-							<textarea className="form-control border-input" name="ProjectDesc" placeholder="This is a textarea with border. Here can be your nice text" rows="3"></textarea>
+							<textarea className="form-control border-input" name="ProjectDesc" placeholder="This is a textarea with border. Here can be your nice text" rows="3" onChange={ event => this.handleChange} ></textarea>
 						</div>
 						<div className="form-group">
 							<div className='input-group date' id='datetimepicker'>
-								<input type='text' name="assignedDate" className="form-control datetimepicker" placeholder="Start Date" />
+								<input type='text' name="assignedDate" className="form-control datetimepicker" placeholder="Start Date" onChange={ event => this.handleChange} />
 								<span className="input-group-addon">
 								<span className="glyphicon glyphicon-calendar"><i className="fa fa-calendar" aria-hidden="true"></i></span>
 								</span>
