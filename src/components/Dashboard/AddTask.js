@@ -45,7 +45,7 @@ class AddTask extends Component {
 						</div>
 						<div className="form-group">
 							<div className='input-group date' id='datetimepicker'>
-								<input type='text' name="assignedDate" className="form-control datetimepicker" placeholder="Start Date" onChange={(e) => this.handleChange} />
+								<input type='text' name="assignedDate" className="form-control datetimepicker" placeholder="Start Date" onChange={e => this.handleChange} />
 								<span className="input-group-addon">
 								<span className="glyphicon glyphicon-calendar"><i className="fa fa-calendar" aria-hidden="true"></i></span>
 								</span>
