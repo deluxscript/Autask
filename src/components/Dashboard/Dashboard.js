@@ -34,7 +34,7 @@ class Dashboard extends  Component {
 						{
 						Object
 						  .keys(this.state.Tasks)
-						  .map(key => <TaskList key={key} eachTask = {this.state.Tasks} />)
+						  .map(key => <TaskList key={key} index={key} eachTask = {this.state.Tasks} />)
 						}
 						</div>
 						<div className="col-md-4">
