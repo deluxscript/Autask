@@ -29,7 +29,6 @@ class AddTask extends Component {
 		const taskForm = document.getElementById('taskForm');
 		taskForm.reset();
 		this.props.Tasklist(Task);
-
 	}
 
 	render() {
