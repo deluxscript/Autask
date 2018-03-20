@@ -5,7 +5,7 @@ class TaskList extends Component {
 	render() {
 		const { eachTask, index } = this.props;
 		// const Task = eachTask;
-		console.log('TaskList', eachTask.projectName);
+		console.log('TaskList', eachTask[index].projectName);
 		return (
 			<div className= "row TaskList">
 				<div className="col-md-12 col-sm-12">
