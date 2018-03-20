@@ -8,7 +8,7 @@ class AddTask extends Component {
 		this.state = {
 			projectName: '',
 			projectDesc: '',
-			assignedDate: '' 
+			assignedDate: ''
 		}
 	}
 
