@@ -16,7 +16,8 @@ class Dashboard extends  Component {
 
 	Tasklist = (Task) => {
 		const Tasks = {...this.state.Tasks};
-		Tasks = Task;
+		const timestamp = Date.now();
+		Tasks[`Task-${timestamp}`] = Task;
 		this.setState({Tasks});
 	};
 
