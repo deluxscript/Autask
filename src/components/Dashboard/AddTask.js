@@ -25,7 +25,7 @@ class AddTask extends Component {
 			projectDesc: this.state.projectDesc,
 			assignedDate: this.state.assignedDate,
 		}
-		console.log(form);
+		console.log(Task);
 		this.props.Tasklist(Task);
 
 	}
