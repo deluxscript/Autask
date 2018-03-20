@@ -3,7 +3,7 @@ import './TaskList.css'
 
 class TaskList extends Component {
 	render() {
-		const Task = this.props.eachTask;
+		const Task = this.props.eachTask[key];
 		console.log('TaskList', Task);
 		return (
 			<div className= "row TaskList">
