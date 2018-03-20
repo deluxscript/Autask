@@ -31,7 +31,11 @@ class Dashboard extends  Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-md-5">
-							<TaskList key={key} eachTask = {this.state.Tasks} />
+						{
+						Object
+						  .keys(this.state.Tasks)
+						  .map(key => <TaskList key={key} eachTask = {this.state.Tasks} />)
+						}
 						</div>
 						<div className="col-md-4">
 							<AddTask Tasklist = {this.Tasklist} />
