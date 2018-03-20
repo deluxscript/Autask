@@ -33,7 +33,7 @@ class Dashboard extends  Component {
 							<TaskList />
 						</div>
 						<div className="col-md-4">
-							<AddTask />
+							<AddTask Tasklist = {this.Tasklist} />
 						</div>
 						<div className="col-md-3">
 							<Profile />
