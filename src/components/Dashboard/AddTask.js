@@ -32,7 +32,7 @@ class AddTask extends Component {
 			projectName: '',
 			projectDesc: '',
 			assignedDate: '',
-		)};
+		});
 	}
 
 	render() {
