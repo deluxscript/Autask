@@ -3,6 +3,8 @@ import './TaskList.css'
 
 const TaskList = () => {
 	return (
+		const Task = this.props.eachTask;
+		console.log('TaskList', Task);
 		<div className= "row TaskList">
 			<div className="col-md-12 col-sm-12">
 				<div className="card">
