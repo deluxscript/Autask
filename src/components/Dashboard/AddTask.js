@@ -20,13 +20,13 @@ class AddTask extends Component {
 
 	onSubmit = (e) => {
 		e.preventDefault();
-		const form = {
+		const Task = {
 			projectName: this.state.projectName,
 			projectDesc: this.state.projectDesc,
 			assignedDate: this.state.assignedDate,
 		}
 		console.log(form);
-		this.props.Tasklist(form);
+		this.props.Tasklist(Task);
 
 	}
 
