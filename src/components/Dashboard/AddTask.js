@@ -28,11 +28,11 @@ class AddTask extends Component {
 		console.log(Task);
 		this.taskForm.reset();
 		this.props.Tasklist(Task);
-		this.state = {
+		this.setState ({
 			projectName: '',
 			projectDesc: '',
 			assignedDate: ''
-		}
+		)}
 	}
 
 	render() {
