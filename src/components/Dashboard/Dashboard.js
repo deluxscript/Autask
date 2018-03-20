@@ -14,6 +14,16 @@ class Dashboard extends  Component {
 		}
 	}
 
+	  Tasklist = (Task) => {
+	    const Tasks = {...this.state.Tasks};
+	    //add in our new Task
+			const timestamp = Date.now();
+			Tasks[`Task-${timestamp}`] = Task;
+			//set State
+			this.setState({Tasks});
+
+	  };
+
 	componentDidMount() {
 		document.body.style.backgroundColor = "#DEE3EB";
 	}
