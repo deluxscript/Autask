@@ -25,7 +25,7 @@ class TaskList extends Component {
 											</h5>
 										</div>
 										<div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne">
-											<div className="card-body">											</div>
+											<div className="card-body"></div>
 										</div>
 									</div>
 								</div>
