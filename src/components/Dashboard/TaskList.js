@@ -18,13 +18,13 @@ class TaskList extends Component {
 									<div className="card">
 										<div className="card-header card-collapse" role="tab" id="headingOne">
 											<h5 className="mb-0 panel-title">
-											<a className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+											<a className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls={index}>
 											Read full project description
 											<i className="ti-angle-down"></i>
 											</a>
 											</h5>
 										</div>
-										<div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne">
+										<div id={index} className="collapse" role="tabpanel" aria-labelledby="headingOne">
 											<div className="card-body">{Task.projectDesc}</div>
 										</div>
 									</div>
