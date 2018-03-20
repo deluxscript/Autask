@@ -10,7 +10,7 @@ class TaskList extends Component {
 				<div className="col-md-12 col-sm-12">
 					<div className="card">
 						<div className="card-body">
-							<h6 className="card-category">Best stories</h6>
+							<h6 className="card-category" id={index}>Best stories</h6>
 							<span className="label label-primary">12/11/2018</span>
 							<div id="acordeon">
 								<div id="accordion" role="tablist" aria-multiselectable="true">
