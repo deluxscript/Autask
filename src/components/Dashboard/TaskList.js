@@ -12,7 +12,7 @@ class TaskList extends Component {
 					<div className="card">
 						<div className="card-body">
 							<h6 className="card-category">{Task.projectName}</h6>
-							<span className="label label-primary">12/11/2018</span>
+							<span className="label label-primary">{Task.assignedDate}</span>
 							<div id="acordeon">
 								<div id="accordion" role="tablist" aria-multiselectable="true">
 									<div className="card">
@@ -25,7 +25,7 @@ class TaskList extends Component {
 											</h5>
 										</div>
 										<div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne">
-											<div className="card-body"></div>
+											<div className="card-body">{Task.projectDesc}</div>
 										</div>
 									</div>
 								</div>
