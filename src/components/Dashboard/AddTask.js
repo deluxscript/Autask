@@ -31,7 +31,7 @@ class AddTask extends Component {
 		this.setState ({
 			projectName: '',
 			projectDesc: '',
-			assignedDate: ''
+			assignedDate: '',
 		)}
 	}
 
