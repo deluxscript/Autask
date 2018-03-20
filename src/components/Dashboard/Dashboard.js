@@ -17,7 +17,6 @@ class Dashboard extends  Component {
 	Tasklist = (Task) => {
 		const Tasks = {...this.state.Tasks};
 		this.setState({Tasks});
-
 	};
 
 	componentDidMount() {
