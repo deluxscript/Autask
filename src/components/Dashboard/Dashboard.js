@@ -7,6 +7,13 @@ import './Dashboard.css';
 
 class Dashboard extends  Component {
 
+	constructor() {
+		super();
+		this.state = {
+			
+		}
+	}
+
 	componentDidMount() {
 		document.body.style.backgroundColor = "#DEE3EB";
 	}
