@@ -26,6 +26,8 @@ class AddTask extends Component {
 			assignedDate: this.state.assignedDate,
 		}
 		console.log(form);
+		this.props.Tasklist(form);
+
 	}
 
 	render() {
